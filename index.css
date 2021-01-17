@@ -1,0 +1,15 @@
+/* nav item border */
+.nav-item {
+    border-right: 1px solid silver;
+    padding-right: 15px; 
+   } 
+/* nav item hover drop down */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+  
