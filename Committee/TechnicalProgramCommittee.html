@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
+        /* nav item border */
+        .nav-item {
+            border-right: 1px solid silver;
+            padding-right: 15px;
+        }
+
+        /* nav item hover drop down */
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+
+        .dropdown>.dropdown-toggle:active {
+            /*Without this, clicking will make it sticky*/
+            pointer-events: none;
+        }
+    </style>
+    <style>
         .card {
             background-color: #ece9e9;
             margin: 0 auto;
@@ -19,6 +36,18 @@
             margin-bottom: 10px;
             /* Added */
         }
+
+        h1 {
+            font-size: clamp(1.2rem, 6vw, 2.5rem);
+        }
+
+        h5 {
+            font-size: clamp(0.2rem, 6vw, 2.0rem);
+        }
+        p {
+            font-size: clamp(0.1rem, 6vw, 1.0rem);
+        }
+        
     </style>
 
     <title>Technical Program Committee</title>

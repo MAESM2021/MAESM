@@ -9,6 +9,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <style>
+            /* nav item border */
+            .nav-item {
+              border-right: 1px solid silver;
+              padding-right: 15px;
+            }
+        
+            /* nav item hover drop down */
+            .dropdown:hover>.dropdown-menu {
+              display: block;
+            }
+        
+            .dropdown>.dropdown-toggle:active {
+              /*Without this, clicking will make it sticky*/
+              pointer-events: none;
+            }
+          </style>
     <style>
         .card {
             background-color: #ece9e9;
