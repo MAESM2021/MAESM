@@ -10,6 +10,35 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <style>
+    /* nav item border */
+    .nav-item {
+      border-right: 1px solid silver;
+      padding-right: 15px;
+    }
+
+    /* nav item hover drop down */
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+
+    .dropdown>.dropdown-toggle:active {
+      /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+    }
+  </style>
+  <style>
+    h1 {
+     font-size: min(max(1.2rem, 3vw), 2.1rem);
+    }
+
+    h5 {
+      font-size: min(max(1.0rem, 2vw), 1.8rem);
+    }
+
+    p {
+      font-size: min(max(0.8rem, 1.7vw), 1.2rem);
+    }
+
     .card {
       background-color: #ece9e9;
       margin: 0 auto;
@@ -305,8 +334,8 @@
       <div class="col d-flex justify-content-center">
         <div class="card w-75 border-0" style="text-align: center;">
           <div class="container text-center">
-            <img src="images\Dr. Anurag Dwivedi.jpeg" class="img-fluid rounded-circle" alt="Dr Ravi Prakash Verma " width="250"
-              height="250">
+            <img src="images\Dr. Anurag Dwivedi.jpeg" class="img-fluid rounded-circle" alt="Dr Ravi Prakash Verma "
+              width="250" height="250">
           </div>
           <div class="card-body">
             <h5 class="card-title">Dr Ravi Prakash Verma </h5>
@@ -347,13 +376,13 @@
         <div class="col-xs-12 col-sm-4 col-md-4">
           <h5>Contact Us</h5>
           <p>BIET NH-24, Sitapur Road, Behind Sewa Hospital, Lucknow, Uttar Pradesh 226021</p>
-          <p><i class="fa fa-phone" style="font-size:20px"> +91 9453760190,+91 9415063290</i></p>
-          <p><i class="fa fa-envelope" style="font-size:20px"> conference@maesm.com</i></p>
+          <p><i class="fa fa-phone"> +91 9453760190,+91 9415063290</i></p>
+          <p><i class="fa fa-envelope"> conference@maesm.com</i></p>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-          <h6>Copyrights © 2021 All Rights Reserved by MAESM-2021</h6>
+          <p>Copyrights © 2021 All Rights Reserved by MAESM</p>
         </div>
         <hr>
       </div>

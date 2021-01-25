@@ -5,7 +5,24 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="index.css">
+  <!-- <link rel="stylesheet" href="index.css"> -->
+  <style>
+    /* nav item border */
+    .nav-item {
+      border-right: 1px solid silver;
+      padding-right: 15px;
+    }
+
+    /* nav item hover drop down */
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+
+    .dropdown>.dropdown-toggle:active {
+      /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+    }
+  </style>
   <!-- logo -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap CSS -->
@@ -64,7 +81,8 @@
             <a class="dropdown-item" href="#">Submit Online</a>
           </div>
         <li class="nav-item">
-          <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdFVoq5FhUwnkT5uXGINSWQK7GPNh1cLL1i7xBXWT4XIwQ8ig/viewform">Registration</a>
+          <a class="nav-link"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdFVoq5FhUwnkT5uXGINSWQK7GPNh1cLL1i7xBXWT4XIwQ8ig/viewform">Registration</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Publication</a>
