@@ -9,7 +9,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <!-- icon logo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -36,6 +37,22 @@
       margin-bottom: 10px;
       /* Added */
     }
+
+    /* nav item border */
+    .nav-item {
+      border-right: 1px solid silver;
+      padding-right: 15px;
+    }
+
+    /* nav item hover drop down */
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+
+    .dropdown>.dropdown-toggle:active {
+      /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+    }
   </style>
 
   <title>Contact Us</title>
@@ -57,21 +74,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="About Us.html">About Us</a>
+          <a class="nav-link" href="AboutUs.html">About Us</a>
         </li>
-        <li class="nav-item active dropdown">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="Committee" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Committee
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="OrganizingCommittee.html">Organizing Committee</a>
-            <a class="dropdown-item" href="ProgramCommittee.html">Program Committee</a>
-            <a class="dropdown-item" href="AdvisoryCommittee.html">Advisory Committee</a>
-            <a class="dropdown-item" href="TechnicalProgramCommittee.html">Technical Program Committee</a>
+            <a class="dropdown-item" href="Committee\OrganizingCommittee.html">Organizing Committee</a>
+            <a class="dropdown-item" href="Committee\ProgramCommittee.html">Program Committee</a>
+            <a class="dropdown-item" href="Committee\AdvisoryCommittee.html">Advisory Committee</a>
+            <a class="dropdown-item" href="Committee\TechnicalProgramCommittee.html">Technical Program Committee</a>
           </div>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -97,7 +114,7 @@
           <a class="nav-link" href="Sponsors.html">Sponsors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact Us</a>
+          <a class="nav-link active" href="contact.html">Contact Us</a>
         </li>
         </li>
       </ul>
@@ -148,7 +165,7 @@
       </div>
     </div>
   </section>
-  
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
